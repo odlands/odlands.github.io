@@ -22,9 +22,13 @@ header h1{
 }
 .banner{
     position: relative;
+    background-color: #cbd8de;
+    max-width: 100%;
 }
 .banner img{
-    max-width: 100%;
+    max-width: 800px;
+    width: 100%;
+    
 }
 .banner .welcome{
     position: absolute;
@@ -47,7 +51,7 @@ nav ul{
     margin: 0 auto;
 }
 nav li{
-    width: 33%;
+    width: 25%;
     display: inline-block;
     font-size: 20px;
     text-align: center;
@@ -119,3 +123,9 @@ nav li a:hover{
     padding: 5px;
     border-radius: 10px;
 }
+
+/* @media screen and (max-width: 1000px){
+    nav li{
+        font-size: 25px;
+    }
+} */
