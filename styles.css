@@ -168,6 +168,12 @@ nav li a:hover{
         border-right: none;
         margin-bottom: 3px;
     }
+    .footer{
+        display: inline;
+    }
+    .social{
+        margin-left: 0px;
+    }
 }
 
 .fa{
