@@ -14,12 +14,6 @@ header{
     top: 0;
     left: 0;
 }
-header h1{
-    border: 8px solid white;
-    padding: 6px 12px;
-    display: inline-block;
-    border-radius: 10px;
-}
 .banner{
     position: relative;
     background-color: #cbd8de;
@@ -29,15 +23,6 @@ header h1{
     max-width: 800px;
     width: 100%;
     
-}
-.banner .welcome{
-    position: absolute;
-    padding: 30px;
-    left: 3%;
-    top: 25%;
-}
-.banner h2{
-    font-size: 30px;
 }
 nav{
     background-color: #f4f4f4;
@@ -59,9 +44,6 @@ nav li{
 nav li a{
     text-decoration: none;
     color: #4b4b4b;
-}
-nav li a.join{
-    /* color: blue; */
 }
 main{
     max-width: 100%;
@@ -91,7 +73,7 @@ article p{
 .images li img{
     max-width: 100%;
 }
-section.join{
+.join{
     background: #f4f4f4;
     text-align: center;
     padding: 60px 20px;
@@ -100,18 +82,65 @@ section.join{
 .join h2{
     font-size: 36px;
 }
-form input{
-    margin: 20px 0;
-    padding: 10px 20px;
-    font-size: 24px;
-    border-radius: 28px;
-    border: 4px solid white;
-}
+
 footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background: #a5bac6;
     color: white;
     padding: 10px;
     text-align: center;
+}
+.copyright{
+    text-align: center;
+    position: relative;
+}
+.footer ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.social{
+    margin-left: 10%;
+    display: inline-block;
+}
+.port-heads{
+    margin-top: 40px;/
+}
+.card-deck{
+    width: 100%;
+    margin-top: 20px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+a.custom-card{
+    color: blue;
+}
+.card{
+    width: 240px;
+    display: inline-block;
+    border-right: 1px solid #a5bac6;
+    max-width: 300px;
+
+}
+.card-image{
+    padding: 5%;
+    width: 100%;
+}
+.card-body{
+    white-space: normal;
+    width: 235px;
+}
+.skills{
+    display: inline-block;
+    list-style: none;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    background: transparent;
 }
 
 /* pseudo-classes */
@@ -123,6 +152,29 @@ nav li a:hover{
     padding: 5px;
     border-radius: 10px;
 }
+.card ul:hover{
+    position: relative;
+    top: -4px;
+}
+
+@media screen and (max-width:400px){
+    .card-deck{
+        white-space: normal;
+    }
+    .card{
+        width: 90%;
+        border-bottom: 1px solid #a5bac6;
+        /* border-top: 1px solid #a5bac6; */
+        border-right: none;
+        margin-bottom: 3px;
+    }
+}
+
+.fa{
+    font-size: 20px;
+    text-decoration: none;
+}
+
 
 /* @media screen and (max-width: 1000px){
     nav li{
