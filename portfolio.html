@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <title>Portfolio</title>  
 </head>
 <body>
@@ -14,10 +15,10 @@
 
 	<nav class="main-nav">
 		<ul>
-            <li><a href="/index.html"><i class="fa fa-home"></i></a></li>
-			<li><a href="/about.html" class="about">About</a></li>
-			<li><a href="/portfolio.html">Portfolio</a></li>
-			<li><a href="/contact.html">Contact</a></li>
+			<li class="home"><a href="http://sheaodland.com" title="Home"><i class="fa fa-home"></i></a></li>
+			<li><a href="http://sheaodland.com/about" title="About Me" class="about">About</a></li>
+			<li><a href="http://sheaodland.com/portfolio" title="Portfolio">Portfolio</a></li>
+			<li><a href="http://sheaodland.com/contact" title="Contact">Contact</a></li>
 		</ul>
 	</nav>
 
@@ -25,37 +26,38 @@
         <article>
             <h2>Portfolio</h2>
             <h3 class="port-heads">Software Development</h3>
-            <section class="card-deck">
-                <a href="https://github.com/odlands/strikeplate" class="custom-card">
-                    <div class="card">
-                        <img class="card-image" src="img/app_icon.jpg" alt="">
+            <div class="row justify-content-center">
+                <div class="col-auto mb-3">
+                    <div class="card text-center h-100">
+                        <img src="img/app_icon.jpg" class="card-img-top" alt="Strikeplate Logo">
                         <div class="card-body">
-                            <h5>Strikeplate</h5>
-                            <p>A mobile app for physical access authentication using NFC technology</p>
+                            <h5 class="card-title">Strikeplate</h5>
+                            <p class="card-text">A mobile app for physical access authentication using NFC technology.</p>
+                            <a href="https://github.com/odlands/strikeplate" class="stretched-link" target="_blank"></a>
                         </div>
                     </div>
-                </a>
-                <!-- <a href="https://github.com/odlands/property-assessments" class="custom-card">
-                    <div class="card">
-                        <img class="card-image" src="img/PA-heatmap (1).jpg" alt="">
+                </div>
+                <div class="col-auto mb-3">
+                    <div class="card text-center h-100">
+                        <img src="img/PA-heatmap (1).jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5>Property Value Viz</h5>
-                            <p>A Java program that allows for easy analysis and visualization of assessment data</p>
+                            <h5 class="card-title">Property Assessment Visualization</h5>
+                            <p class="card-text">A Java program that allows for easy analysis and visualization of assessment data.</p>
+                            <a href="https://github.com/odlands/property-assessments" class="stretched-link" target="_blank"></a>
                         </div>
                     </div>
-                </a> -->
-                <a href="https://github.com/odlands" class="custom-card">
-                    <div class="card">
-                        <img class="card-image" src="img/github-logo-silhouette-in-a-square318-54633.jpg" alt="">
+                </div>
+                <div class="col-auto mb-3">
+                    <div class="card text-center h-100">
+                        <img src="img/github-logo-silhouette-in-a-square318-54633.jpg" class="card-img-top" alt="Github Logo">
                         <div class="card-body">
-                            <h5>More here!</h5>
-                            <p>Feel free to check out other projects that I've worked on at github!</p>
+                            <h5 class="card-title">More here!</h5>
+                            <p class="card-text">Feel free to check out other projects that I've worked on at github!</p>
+                            <a href="https://github.com/odlands" class="stretched-link" target="_blank"></a>
                         </div>
                     </div>
-                </a>
-                
-            </section>
-
+                </div>
+            </div>
         </article>
     </main>
     <footer>
@@ -64,10 +66,10 @@
 				<li><p class="copyright">Copyright 2020 Shea Odland</p></li>
 				<div class="social">
 					<ul>
-						<li><a href="https://www.facebook.com/shea.odland/" class="fa fa-facebook"></a></li>
-						<li><a href="https://github.com/odlands/" class="fa fa-github"></a></li>
-						<li><a href="https://www.linkedin.com/in/shea-odland-7a04bb117/" class="fa fa-linkedin"></a></li>
-						<li><a href="https://twitter.com/darthsweetness" class="fa fa-twitter"></a></li>
+						<li><a href="https://www.facebook.com/shea.odland/" class="fa fa-facebook" target="_blank"></a></li>
+						<li><a href="https://github.com/odlands/" class="fa fa-github" target="_blank"></a></li>
+						<li><a href="https://www.linkedin.com/in/shea-odland-7a04bb117/" class="fa fa-linkedin" target="_blank"></a></li>
+						<li><a href="https://twitter.com/darthsweetness" class="fa fa-twitter" target="_blank"></a></li>
 					</ul>
 				</div>
 			</ul>

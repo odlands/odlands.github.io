@@ -20,7 +20,7 @@ header{
     max-width: 100%;
 }
 .banner img{
-    max-width: 800px;
+    max-width: 600px;
     width: 100%;
     
 }
@@ -105,33 +105,22 @@ footer{
     margin-left: 10%;
     display: inline-block;
 }
+.social li a{
+    color: white;
+}
 .port-heads{
-    margin-top: 40px;/
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
-.card-deck{
-    width: 100%;
-    margin-top: 20px;
-    display: inline-block;
-    white-space: nowrap;
-    overflow-x: scroll;
-}
-a.custom-card{
-    color: blue;
-}
-.card{
-    width: 240px;
-    display: inline-block;
-    border-right: 1px solid #a5bac6;
-    max-width: 300px;
 
+.card{
+    width: 18rem;
 }
-.card-image{
-    padding: 5%;
-    width: 100%;
+.card-body h5{
+    color: teal;
 }
-.card-body{
-    white-space: normal;
-    width: 235px;
+.row.port{
+    overflow-x: scroll;
 }
 .skills{
     display: inline-block;
@@ -146,28 +135,31 @@ a.custom-card{
 /* pseudo-classes */
 
 nav li a:hover{
-    /* text-decoration: underline; */
     background-color: #a5bac6;
     color: white;
     padding: 5px;
     border-radius: 10px;
 }
-.card ul:hover{
+.card:hover{
     position: relative;
     top: -4px;
 }
+.social li a:hover{
+    text-decoration: none;
+    color: teal;
+}
 
 @media screen and (max-width:400px){
-    .card-deck{
+    /* .card-deck{
         white-space: normal;
     }
     .card{
         width: 90%;
         border-bottom: 1px solid #a5bac6;
-        /* border-top: 1px solid #a5bac6; */
+        border-top: 1px solid #a5bac6;
         border-right: none;
         margin-bottom: 3px;
-    }
+    } */
     .footer{
         display: inline;
     }
@@ -180,10 +172,3 @@ nav li a:hover{
     font-size: 20px;
     text-decoration: none;
 }
-
-
-/* @media screen and (max-width: 1000px){
-    nav li{
-        font-size: 25px;
-    }
-} */
