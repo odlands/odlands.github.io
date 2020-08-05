@@ -1,79 +1,110 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <title>Portfolio</title>  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <title>Shea Odland</title>  
 </head>
 <body>
-    <section class="banner">
-		<img src="img/sheabanner.jpg" alt="Shea Odland Banner">
-	</section>
 
-	<nav class="main-nav">
-		<ul>
-			<li class="home"><a href="http://sheaodland.com" title="Home"><i class="fa fa-home"></i></a></li>
-			<li><a href="http://sheaodland.com/about" title="About Me" class="about">About</a></li>
-			<li><a href="http://sheaodland.com/portfolio" title="Portfolio">Portfolio</a></li>
-			<li><a href="http://sheaodland.com/contact" title="Contact">Contact</a></li>
-		</ul>
-	</nav>
+	<header class="pheader">
+		<nav class="navbar portfolio navbar-expand-sm navbar-light">
+			<video src="img/SheaOdlandLogo.mp4" autoplay loop width="100"></video>
+			<!-- <img class="logo" width="100" src="img/SheaOdlandLogo.jpg" alt="SOLogo"> -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  	<ul class="navbar-nav ml-sm-auto">
+					<li class="nav-item">
+				  		<a class="nav-link" href="http://sheaodland.com">Home</a>
+					</li>
+					<li class="nav-item">
+				  		<a class="nav-link" href="http://sheaodland.com/about2">About Me</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="http://sheaodland.com/portfolio2">Portfolio<span class="sr-only">(current)</span></a>
+				  	</li>
+				  	<li class="nav-item">
+						<a class="nav-link" href="http://sheaodland.com/contact">Contact</a>
+			  		</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
 
     <main>
-        <article>
+        <article class="portfolio">
             <h2>Portfolio</h2>
             <h3 class="port-heads">Software Development</h3>
-            <div class="row justify-content-center">
-                <div class="col-auto mb-3">
-                    <div class="card text-center h-100">
-                        <img src="img/app_icon.jpg" class="card-img-top" alt="Strikeplate Logo">
-                        <div class="card-body">
-                            <h5 class="card-title">Strikeplate</h5>
-                            <p class="card-text">A mobile app for physical access authentication using NFC technology.</p>
-                            <a href="https://github.com/odlands/strikeplate" class="stretched-link" target="_blank"></a>
+            <div class="container-fluid">
+                <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4">
+                    <div class="col-auto mb-3">
+                        <div class="card card-block text-center h-100">
+                            <img src="img/app_icon.jpg" class="card-img-top" alt="Strikeplate Logo">
+                            <div class="card-body">
+                                <h5 class="card-title">Strikeplate</h5>
+                                <p class="card-text">A mobile app for physical access authentication using NFC technology.</p>
+                                <a href="https://github.com/odlands/strikeplate" class="stretched-link" target="_blank"></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-auto mb-3">
-                    <div class="card text-center h-100">
-                        <img src="img/PA-heatmap (1).jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Property Assessment Visualization</h5>
-                            <p class="card-text">A Java program that allows for easy analysis and visualization of assessment data.</p>
-                            <a href="https://github.com/odlands/property-assessments" class="stretched-link" target="_blank"></a>
+                    <div class="col-auto mb-3">
+                        <div class="card card-block text-center h-100">
+                            <img src="img/PA-heatmap (1).jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Property Assessment Visualization</h5>
+                                <p class="card-text">A Java program that allows for easy analysis and visualization of assessment data.</p>
+                                <a href="https://github.com/odlands/property-assessments" class="stretched-link" target="_blank"></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-auto mb-3">
-                    <div class="card text-center h-100">
-                        <img src="img/github-logo-silhouette-in-a-square318-54633.jpg" class="card-img-top" alt="Github Logo">
-                        <div class="card-body">
-                            <h5 class="card-title">More here!</h5>
-                            <p class="card-text">Feel free to check out other projects that I've worked on at github!</p>
-                            <a href="https://github.com/odlands" class="stretched-link" target="_blank"></a>
+                    <div class="col-auto mb-3">
+                        <div class="card card-block text-center h-100">
+                            <img src="img/SheaOdlandLogo.jpg" class="card-img-top" alt="Shea Odland Logo">
+                            <div class="card-body">
+                                <h5 class="card-title">sheaodland.com</h5>
+                                <p class="card-text">Watch the progress being made as this website is developed.</p>
+                                <a href="https://github.com/odlands/odlands.github.io" class="stretched-link" target="_blank"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto mb-3">
+                        <div class="card card-block text-center h-100">
+                            <img src="img/github-logo-silhouette-in-a-square318-54633.jpg" class="card-img-top" alt="Github Logo">
+                            <div class="card-body">
+                                <h5 class="card-title">More here!</h5>
+                                <p class="card-text">Feel free to check out other projects that I've worked on at github!</p>
+                                <a href="https://github.com/odlands" class="stretched-link" target="_blank"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </article>
     </main>
-    <footer>
+
+	<footer>
 		<div class="footer">
-			<ul>
-				<li><p class="copyright">Copyright 2020 Shea Odland</p></li>
-				<div class="social">
-					<ul>
-						<li><a href="https://www.facebook.com/shea.odland/" class="fa fa-facebook" target="_blank"></a></li>
-						<li><a href="https://github.com/odlands/" class="fa fa-github" target="_blank"></a></li>
-						<li><a href="https://www.linkedin.com/in/shea-odland-7a04bb117/" class="fa fa-linkedin" target="_blank"></a></li>
-						<li><a href="https://twitter.com/darthsweetness" class="fa fa-twitter" target="_blank"></a></li>
-					</ul>
-				</div>
-			</ul>
+			
+			<span class="copyright">Copyright 2020 Shea Odland</span>
+			<div class="social">
+				<ul>
+					<li><a href="https://www.facebook.com/shea.odland/" class="fa fa-facebook" target="_blank"></a></li>
+					<li><a href="https://github.com/odlands/" class="fa fa-github" target="_blank"></a></li>
+					<li><a href="https://www.linkedin.com/in/shea-odland-7a04bb117/" class="fa fa-linkedin" target="_blank"></a></li>
+					<li><a href="https://twitter.com/darthsweetness" class="fa fa-twitter" target="_blank"></a></li>
+				</ul>
+			</div>
+			
 		</div>
 	</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
