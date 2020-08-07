@@ -1,3 +1,5 @@
+/* shared properties */
+
 header{
     position: absolute;
     z-index: 10;
@@ -6,7 +8,6 @@ header{
 
 .banner{
     position: relative;
-    background: url(img/shea4.jpg);
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -18,37 +19,21 @@ header{
     font-size: 2.8em;
     font-weight: 700;
 }
+/* .banner h3{
+    margin: 1em 0 0;
+} */
 .banner p{
     margin: 1em 0 0;
     padding: 0;
     line-height: 1.5em;
     font-size: 1.2em;
 }
-.banner.about{
-    position: relative;
-    background: url(img/shea5.jpg);
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-    padding: 200px 0 200px;
-}
-.banner.about h3{
-    margin: 1em 0 1em;
-}
-.banner.about p{
-    margin: 1em 0 0;
-}
-.pheader{
-    z-index: 0;
-    position: relative;
+.banner.strikeplate img{
+    width: 100%;
+    margin: 10px 0 0;
 }
 .navbar{
     padding: 20px 0;
-}
-.navbar.portfolio{
-    padding: 20px 0;
-    background-color: white;
-    width: 100%;
 }
 .nav-item{
     font-weight: 500;
@@ -65,28 +50,12 @@ header{
     background: rgb(90, 90, 90);
     color: white;
 }
-.portfolio h2{
-    margin-top: 40px;
-    text-align: start;
-    font-weight: 700;
-}
-.portfolio h3{
-    margin: 40px 0;
-    text-align: start;
-    font-weight: 600;
-}
-
 main{
     max-width: 100%;
     padding: 0 40px;
     box-sizing: border-box;
     text-align: center;
     position: relative;
-}
-main .contact{
-    position: relative;
-    top: 250px;
-    z-index: -1;
 }
 article h2{
     font-size: 48px;
@@ -95,7 +64,6 @@ article p{
     line-height: 1.5em;
     color: #4b4b4b;
 }
-
 footer{
     position: relative;
     width: 100%;
@@ -103,10 +71,6 @@ footer{
     color: white;
     padding: 10px;
     text-align: center;   
-}
-.cfooter{
-    position: fixed;
-    bottom: 0;
 }
 footer ul{
     padding: 10px;
@@ -126,20 +90,77 @@ footer ul{
     color: white;
     padding: 10px;
 }
-
 .card{
     width: 14rem;
 }
-
 .skills{
     display: inline-block;
     list-style: none;
+}
+.fa{
+    font-size: 20px;
+    text-decoration: none;
+}
+.scrolling-wrapper{
+    overflow-x: auto;
+}
+body{
+	background-color: black;
+	color: #fff;
+	font-family: 'system-ui';
+}
+h1{
+	font-weight: 800;
+	font-size: 3em;
+}
+.subtitle{
+	font-size: 1.25em;
+	opacity: 0.65;
+}
+
+/* page-specific properties */
+
+/* .banner.about{
+    background: url(img/shea5.jpg);
+    background-size: cover;
+    background-position: center;
+} */
+.banner.about h3{
+    margin: 1em 0 1em;
+}
+.pheader{
+    z-index: 0;
+    position: relative;
+}
+.navbar.portfolio{
+    background-color: white;
+    width: 100%;
+}
+.portfolio h2{
+    margin-top: 40px;
+    text-align: start;
+    font-weight: 700;
+}
+.portfolio h3{
+    margin: 40px 0;
+    text-align: start;
+    font-weight: 600;
+}
+main .contact{
+    position: relative;
+    top: 250px;
+    z-index: -1;
+}
+.cfooter{
+    position: fixed;
+    bottom: 0;
 }
 
 ::-webkit-scrollbar{
     width: 0px;
     background: transparent;
 }
+
 
 /* pseudo-classes */
 
@@ -170,29 +191,4 @@ footer ul{
         margin-left: 0px;
         text-align: center;
     }
-}
-
-.fa{
-    font-size: 20px;
-    text-decoration: none;
-}
-
-.scrolling-wrapper{
-    overflow-x: auto;
-}
-
-body{
-	background-color: black;
-	color: #fff;
-	font-family: 'system-ui';
-}
-
-h1{
-	font-weight: 800;
-	font-size: 3em;
-}
-
-.subtitle{
-	font-size: 1.25em;
-	opacity: 0.65;
 }
