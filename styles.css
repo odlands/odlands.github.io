@@ -8,7 +8,7 @@ header{
 
 .banner{
     position: relative;
-    min-height: 100vh;
+    min-height: 96vh;
     background-size: cover;
     background-position: center;
     padding: 200px 0 100px;
@@ -64,6 +64,7 @@ article p{
     line-height: 1.5em;
     color: #4b4b4b;
 }
+
 footer{
     position: relative;
     width: 100%;
@@ -72,23 +73,28 @@ footer{
     padding: 10px;
     text-align: center;   
 }
-footer ul{
-    padding: 10px;
-}
+
 .footer ul li{
     display: inline-block;
-    margin: 10px 5px 0;
 }
-.copyright{
-    padding: 5px;
+
+.footer-portfolio {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
+
+.footer-portfolio ul li {
+    display: inline-block;
+}
+
 .social{
     display: inline-block;
-    margin: 0 0 0 20%;
+    margin-bottom: 0rem;
 }
 .social li a{
     color: white;
-    padding: 10px;
+    padding-right: 10px;
 }
 .card{
     width: 14rem;
@@ -120,11 +126,6 @@ h1{
 
 /* page-specific properties */
 
-/* .banner.about{
-    background: url(img/shea5.jpg);
-    background-size: cover;
-    background-position: center;
-} */
 .banner.about h3{
     margin: 1em 0 1em;
 }

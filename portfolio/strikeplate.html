@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../styles.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <title>Shea Odland</title>  
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../styles.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<title>Shea Odland</title>  
 </head>
 <body>
 	<header>
@@ -36,7 +37,7 @@
 
 	<section class="banner strikeplate">
 		<div class="container">
-			<div class="row justify-content-start border-bottom">
+			<div class="row justify-content-start border-bottom" data-aos="fade-down" data-aos-duration="2000">
 				<div class="col mb-5">
                     <h1 class="mt-0 mb-5 font-weight-bold">
 						Strikeplate
@@ -51,7 +52,7 @@
                     </p>
                 </div>
             </div>
-            <div class="row justify-content-end border-bottom">
+            <div class="row justify-content-end border-bottom" data-aos="fade-left" data-aos-duration="2000">
                 <div class="col-md-7 mt-5 my-sm-5 order-md-2">
                     <h3>The Build</h3>
                     <p>The product consists of two applications both built with Flutter and utilizing
@@ -64,7 +65,7 @@
 					<img src="../img/flfb.jpg" alt="Flutter/Firebase">
 				</div>
             </div>
-            <div class="row border-bottom">
+            <div class="row border-bottom" data-aos="fade-left" data-aos-duration="2000">
 				<div class="col-md-5 mt-5 my-sm-5 align-self-center">
                     <h3>The Web App</h3>
 					<p>Our web application is built solely for the administrator. It allows her to validate
@@ -76,7 +77,7 @@
 					<img src="../img/webappsp.jpg" alt="Strikeplate Web App">
 				</div>
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center" data-aos="fade-right" data-aos-duration="2000">
                 <div class="col-md-7 order-md-2 mt-5 align-self-center">
                     <h3>The Mobile App</h3>
                     <p>Once a user downloads the app and gets validated by their administrator, their
@@ -91,27 +92,31 @@
 					<img src="../img/mobileappsp.jpg" alt="Strikeplate Mobile App">
 				</div>
 			</div>
-			<div class="row mt-5 justify-content-center">
+			<div class="row mt-5 justify-content-center" data-aos="fade-up" data-aos-duration="2000">
 				<a href="www.github.com/odlands/strikeplate" target="_blank"><button type="button" class="btn btn-primary btn-lg btn-dark">See More at Github</button></a>
 			</div>
 		</div>
 	</section>
 
 	<footer class="footer">
-		<div class="footer">		
-			<span class="copyright">Copyright 2020 Shea Odland</span>
-			<div class="social">
-				<ul>
+		<div class="container-fluid">
+			<div class="row justify-content-end">
+				<span>Copyright 2020 Shea Odland</span>
+				<ul class="social">
 					<li><a href="https://www.facebook.com/shea.odland/" class="fa fa-facebook" target="_blank"></a></li>
 					<li><a href="https://github.com/odlands/" class="fa fa-github" target="_blank"></a></li>
 					<li><a href="https://www.linkedin.com/in/shea-odland-7a04bb117/" class="fa fa-linkedin" target="_blank"></a></li>
 					<li><a href="https://twitter.com/darthsweetness" class="fa fa-twitter" target="_blank"></a></li>
 				</ul>
-			</div>	
+			</div>
 		</div>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 </html>
